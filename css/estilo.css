@@ -1,50 +1,124 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f8f9fa;
-  color: #212529;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background-color: #f4f4f8;
+  color: #333;
+  line-height: 1.6;
 }
 
 h1, h2, h3 {
-  font-weight: 600;
+  font-weight: 700;
+  color: #222;
   margin-bottom: 1rem;
 }
 
-article img {
-  border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-  max-width: 100%;
-  height: auto;
+h1 {
+  font-size: 2.2rem;
 }
 
-section, article {
-  margin-bottom: 2.5rem;
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+header {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 nav .btn {
-  margin: 0 4px;
+  margin: 0 0.25rem;
+  font-weight: 500;
+  padding: 0.4rem 0.8rem;
+}
+
+article {
+  background-color: #fff;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+}
+
+article img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 1rem auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+article img:hover {
+  transform: scale(1.02);
+}
+
+@media (min-width: 768px) {
+  article img {
+    max-height: 380px;
+    object-fit: cover;
+  }
 }
 
 footer {
   font-size: 0.9rem;
+  color: #666;
   background-color: #e9ecef;
-  color: #495057;
+  border-top: 1px solid #ccc;
 }
 
 form .form-label {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 form .form-control {
-  border-radius: 4px;
+  border-radius: 6px;
+  padding: 0.6rem;
+  box-shadow: none;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+
+form .form-control:focus {
+  border-color: #007bff;
+  outline: none;
 }
 
 .btn-primary {
   background-color: #0056b3;
-  border-color: #004999;
+  border-color: #004b9a;
+  font-weight: 600;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #003f82;
+  border-color: #003a75;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f2f2f7;
+}
+
+.table th {
+  background-color: #dee2e6;
+}
+
+audio, video {
+  width: 100%;
+  max-width: 720px;
+  margin: 1rem auto;
+  display: block;
+}
+
+main {
+  padding: 1rem;
 }
 
 @media (min-width: 768px) {
   main {
-    padding: 0 2rem;
+    padding: 2rem 4rem;
   }
 }
