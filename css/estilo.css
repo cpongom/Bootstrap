@@ -1,0 +1,50 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+article img {
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  max-width: 100%;
+  height: auto;
+}
+
+section, article {
+  margin-bottom: 2.5rem;
+}
+
+nav .btn {
+  margin: 0 4px;
+}
+
+footer {
+  font-size: 0.9rem;
+  background-color: #e9ecef;
+  color: #495057;
+}
+
+form .form-label {
+  font-weight: 500;
+}
+
+form .form-control {
+  border-radius: 4px;
+}
+
+.btn-primary {
+  background-color: #0056b3;
+  border-color: #004999;
+}
+
+@media (min-width: 768px) {
+  main {
+    padding: 0 2rem;
+  }
+}
